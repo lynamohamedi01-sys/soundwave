@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "SoundWave",
+    "slug": "soundwave",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0D0D1A",
+    "splash": {
+      "backgroundColor": "#0D0D1A",
+      "resizeMode": "contain"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.soundwave.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0D0D1A",
+        "foregroundImage": "./assets/adaptive-icon.png"
+      },
+      "package": "com.soundwave.app",
+      "permissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.READ_MEDIA_AUDIO"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow SoundWave to access your photos for wallpapers.",
+          "audioPermission": "Allow SoundWave to access your music files."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow SoundWave to access your photos for wallpapers."
+        }
+      ]
+    ],
+    "extra": {},
+    "owner": "lynaahs-team"
+  }
+}
